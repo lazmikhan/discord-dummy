@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Group from './Pages/Group/Group';
+import Friends from './Pages/Friends/Friends';
+import Chat from './Pages/Chat/Chat';
+import Nav from './Pages/Nav/Nav';
+import Info from './Pages/Chat/Info/Info';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{backgroundColor:'rgb(41, 40, 40)'}} className="App ">
+     
+      
+<div className='d-flex'>
+
+<Group></Group>
+<Friends></Friends>
+
+<div className='border'>
+  <Chat></Chat>
+</div>
+<div  className='border '><Info></Info></div>
+
+</div>
+<div className='d-flex '>
+
+</div>
     </div>
   );
 }
